@@ -232,5 +232,39 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  color: green;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Lora", serif;
+  font-size: 0.5rem;
+}
+
+.navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.navBar li {
+  list-style-type: none;
+}
+.navBar a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: black;
 }
