@@ -235,13 +235,23 @@ h1 {
 }
 
 h2 {
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-size: 1rem;
 }
 
 p {
   font-family: "Lora", serif;
   font-size: 0.5rem;
+}
+
+button {
+  background-color: #D89999;
 }
 
 .navBar ul {
@@ -267,4 +277,24 @@ p {
           justify-content: center;
   text-decoration: none;
   color: black;
+}
+
+.aboutMe {
+  background-color: #F8F4F3;
+}
+
+.skills {
+  background-color: #365C46;
+}
+
+.projects {
+  background-color: #F7E4DC;
+}
+
+.contact {
+  background-color: #B6CAA2;
+}
+
+footer {
+  background-color: #365C46;
 }
