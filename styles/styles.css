@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -224,4 +226,8 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
 }
