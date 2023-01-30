@@ -2,4 +2,8 @@
 
 .contact {
     background-color: $contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+

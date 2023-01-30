@@ -1,2 +1,18 @@
 @use 'variables' as *;
 
+ header {
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    height: 50vh;
+    
+    
+ }
+
+ .headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    color: white;
+    
+ }

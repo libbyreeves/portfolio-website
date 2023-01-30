@@ -2,4 +2,17 @@
 
 .projects {
     background-color: $projects;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.projectContent {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.project1, .project2 {
+    background-color: white;
 }

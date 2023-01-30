@@ -1,5 +1,6 @@
 @use 'partials/setup';
 @use 'partials/variables';
+@use 'partials/siteStyles';
 @use 'partials/typography';
 @use 'partials/button';
 @use 'partials/nav';
@@ -9,3 +10,4 @@
 @use 'partials/projects';
 @use 'partials/contact';
 @use 'partials/footer';
+@use 'partials/icons';
