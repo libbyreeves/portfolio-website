@@ -352,7 +352,9 @@ button:hover:focus:active {
 header {
   background-image: url("../images/bannerCoffee.svg");
   background-size: cover;
-  height: 50vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 0;
 }
 
@@ -369,6 +371,7 @@ header {
           justify-content: center;
   margin-top: 8em;
   color: white;
+  padding-bottom: 5rem;
 }
 
 .aboutMe {
