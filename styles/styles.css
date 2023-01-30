@@ -550,6 +550,12 @@ i {
   font-size: 3rem;
 }
 
+.contactIconContainer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 36px;
+}
+
 .nav {
   position: fixed;
   background: pink;
@@ -664,4 +670,13 @@ i {
 
 .hamburger::after {
   bottom: 6px;
+}
+
+@media (min-width: 300px) {
+  .navBar {
+    display: none;
+  }
+  .nav-toggle {
+    color: pink;
+  }
 }
