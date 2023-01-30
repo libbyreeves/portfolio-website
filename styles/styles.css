@@ -273,18 +273,18 @@ h1 {
 
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 h3 {
   font-family: "Lora", serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 p {
   font-family: "Lora", serif;
-  font-size: 0.5rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -294,8 +294,22 @@ a {
 
 button {
   background-color: #D89999;
-  height: 40px;
-  width: 40px;
+  height: auto;
+  width: auto;
+  padding: 15px;
+}
+
+.projectButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-decoration: none;
+}
+
+.emailButton {
+  test-decoration: none;
 }
 
 .navBar ul {
@@ -312,11 +326,13 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 0;
+  margin: 0;
+  background-color: transparent;
 }
 .navBar li {
   list-style-type: none;
   margin-right: 4rem;
+  background-color: none;
 }
 .navBar a {
   -webkit-box-pack: center;
@@ -327,9 +343,10 @@ button {
 }
 
 header {
-  background-image: url("../images/banner.png");
+  background-image: url("../images/bannerCoffee.svg");
   background-size: cover;
   height: 50vh;
+  margin-top: 0;
 }
 
 .headerText {
@@ -343,17 +360,55 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 1rem;
+  margin-top: 8em;
   color: white;
 }
 
 .aboutMe {
   background-color: #F8F4F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aboutMe .headShot {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.aboutMe img {
+  border-radius: 50%;
+}
+.aboutMe .aboutMeText {
+  max-width: 1000px;
+  margin-top: 2%;
 }
 
 .skills {
   background-color: #365C46;
   font: white;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills h2 {
+  margin: 0;
+  padding: 7rem;
+  color: white;
 }
 
 .projects {
@@ -365,8 +420,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  row-gap: 1rem;
+  padding: 6rem;
 }
 
 .projectContent {
@@ -378,13 +435,36 @@ header {
           justify-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 6rem;
 }
 
 .project1, .project2 {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.project1 img, .project2 img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.project1 p, .project2 p {
+  font-size: 1rem;
+}
+
+.textContent {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .contact {
+  padding-bottom: 6rem;
   background-color: #B6CAA2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,15 +473,62 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 6rem;
+}
+.contact .emailElizabeth {
+  margin-top: 1rem;
 }
 
 footer {
   background-color: #365C46;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: white;
 }
 
-.devicon-firebase-plain {
+i {
   color: white;
+  font-size: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactIconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.contactIconContainer i {
+  font-size: 3rem;
 }

@@ -1,9 +1,11 @@
 @use 'variables' as *;
 
  header {
-    background-image: url('../images/banner.png');
+    background-image: url('../images/bannerCoffee.svg');
     background-size: cover;
     height: 50vh;
+    margin-top: 0;
+   
     
     
  }
@@ -12,7 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 8em;
     color: white;
     
  }

@@ -2,4 +2,24 @@
 
 .aboutMe {
     background-color: $aboutMe;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    align-items: center;
+    
+
+    .headShot {
+        align-self: center;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .aboutMeText {
+        max-width: 1000px;
+        margin-top: 2%;
+    }
+    
 }
+

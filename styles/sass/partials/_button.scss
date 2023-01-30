@@ -2,7 +2,20 @@
 
 button {
     background-color: $buttonBackground;
-    height: 40px;
-    width: 40px;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    
+}
+
+.projectButton {
+    display:flex;
+    justify-content: space-around;
+    text-decoration: none;
+        
+}
+
+.emailButton {
+    test-decoration: none;
 }
 
