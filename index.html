@@ -11,6 +11,18 @@
 <body>
     <div class="wrapper">
         <header id="header">
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#aboutMe" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
             <nav class="navBar" id="navBar">
                
                     <ul>
@@ -18,25 +30,25 @@
                             <a href="#header">Home</a>
                         </li>
                         <li>
-                            <a href="'">About</a>
+                            <a href="#aboutMe">About</a>
                         </li>
                         <li>
-                            <a href="'">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a href="'">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 
             </nav>
-        <div class="headerText">
+        <div class="headerText" id="home">
         <h1>Elizabeth Reeves</h1>
         <h3>Web Developer</h3>
         </div>
     </header>
 
     <main>
-        <section class="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             <div class="headShot">
                 <img src= "http://placekitten.com/200/200" alt="a kitten headshot">
             </div>
@@ -49,7 +61,7 @@
             </div>
 
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>Skills</h2>
             <div class="iconContainer">
                 <i class="devicon-firebase-plain"></i>
@@ -64,7 +76,7 @@
 
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <div class="projectContent">
             <div class="project1">
@@ -74,8 +86,8 @@
                 <h4>HTML | SASS | CSS</h4>
                 <p>a multi-page PSD conversion created from the provided style deck</p>
                 <div class="projectButton">
-                <button>View Live</button>
-                <button>View Repo</button>
+                <button class="button">View Live</button>
+                <button class="button">View Repo</button>
                 </div>
                 </div>
             </div>
@@ -86,14 +98,14 @@
                 <h4>HTML | SASS | CSS | JavaScript | RESTful API </h4>
                 <p>A fun game utilizing APIs to generate insults or a pieces of advice to the opposing stick figure until one explodes</p>
                 <div class="projectButton">
-                    <button>View Live</button>
-                    <button>View Repo</button>
+                    <button class="button">View Live</button>
+                    <button class="button">View Repo</button>
                     </div>
                 </div>
             </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contact</h2>
             <div class="contactIconContainer">
                 <i class="devicon-linkedin-plain"></i>
@@ -102,7 +114,7 @@
             </div>
             
             <div class="emailElizabeth">
-            <button class="emailButton">Email Elizabeth</button>
+            <button class="button">Email Elizabeth</button>
             </div>
         </section>
     </main>

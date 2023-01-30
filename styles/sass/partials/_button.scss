@@ -8,14 +8,21 @@ button {
     
 }
 
+button:hover:focus:active {
+    background-color: black;
+}
+
 .projectButton {
     display:flex;
     justify-content: space-around;
     text-decoration: none;
+    border: none;
         
 }
 
-.emailButton {
-    test-decoration: none;
+.button {
+    text-decoration: none;
+    border: none;
+    font-family: roboto;
 }
 

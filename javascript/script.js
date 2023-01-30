@@ -1,17 +1,12 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link')
 
-// Get the navbar
-const navbar = document.getElementById("navBar");
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
 
-// Get the offset position of the navbar
-const sticky = navBar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-} 
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})

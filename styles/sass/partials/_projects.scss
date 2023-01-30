@@ -27,12 +27,20 @@
     display: flex;
     flex-basis: 30%;
     flex-direction: column;
-    p {
+    h4 {
         font-size: 1.0rem;
+        font-family: roboto;
+        color: $skillsBackground;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
 
 .textContent {
     margin-left: 1rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
+    justify-items: center;;
 }
