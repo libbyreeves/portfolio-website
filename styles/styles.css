@@ -446,6 +446,8 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .project1, .project2 {
@@ -674,11 +676,40 @@ i {
   bottom: 6px;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 1000px) {
+  .project1, .project2 {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
+@media (max-width: 800px) {
+  .button {
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+  }
+}
+@media (max-width: 350px) {
   .navBar {
     display: none;
   }
-  .nav-toggle {
-    color: pink;
+  .hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: black;
+  }
+  .button {
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+  }
+  .projecs {
+    padding-right: 0;
+    padding-left: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .project1 {
+    margin-bottom: 0.4rem;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
