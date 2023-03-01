@@ -1,7 +1,10 @@
 @use  './variables' as *;
 @use  './mixins' as *;
 @use  './responsive' as *;
-
+span.emoji {
+    font-size: 32px;
+    vertical-align: middle;
+}
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;

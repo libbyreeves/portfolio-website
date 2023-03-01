@@ -226,6 +226,11 @@ html {
   overflow: hidden;
 }
 
+span.emoji {
+  font-size: 32px;
+  vertical-align: middle;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -1160,17 +1165,14 @@ footer {
 .wave {
   -webkit-animation-name: wave-animation;
           animation-name: wave-animation;
-  /* Refers to the name of your @keyframes element below */
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
-  /* Change to speed up or slow down */
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  /* Never stop waving :) */
   -webkit-transform-origin: 70% 70%;
           transform-origin: 70% 70%;
-  /* Pivot around the bottom-left palm */
   display: inline-block;
+  font-size: 70px;
 }
 
 @-webkit-keyframes wave-animation {
