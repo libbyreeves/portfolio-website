@@ -1,27 +1,142 @@
-.navBar {
-    
+@use '../variables' as *;
+@use '../responsive' as *;
+@use '../mixins' as *;
+
+//nav
+nav {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize; 
     ul {
+        margin: 0 auto;
+        padding-top: 30px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        a {
+            color: $text-color;
+            text-decoration: none;
+            &:visited {
+                color: $text-color;
+            }
+            &:hover, &:focus {
+                color: $text-hover;
+            }
+        }
+        li {
+            padding: 0 20px;
+        }
+    }
+}
+
+.desktop-menu {
+    @include tablet {
+        display: none;
+    }
+}
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    padding: 0 25px 0 100px;
+    transition: 0.25s ease-in-out;
+    @include tablet {
+        padding: 0 50px;
+        height: 100%;
+    }
+    &.open {
+        background-color: $background-secondary;
+        transition: 0.25s ease-in-out;
+        z-index: 2;
+    }
+    ul {
         margin: 0;
-        background-color: transparent;
-        
+        padding-top: 0.75em;
+        flex-direction: column;
+        align-items: flex-end;
+        li {
+            padding: 0.75em 0;
+        }
+        a {
+            font-size: 2.5em;
+        }
     }
-
-    li {
-        list-style-type: none;
-        margin-right: 4rem;
-        background-color: none;
-    
+    .mobile-menu {
+        visibility: hidden;
+        padding-top: 50px;
+        // background-color: $background-secondary;
+        opacity: 0%;
+        transition: 0.25s ease-in-out;
+        z-index: 1;
+        @include tablet {
+        &.open {
+            visibility: visible;
+            display: flex;
+            opacity: 100%;
+            transition: 0.25s ease-in-out;
+            }
+        }
     }
+}
 
-    a {
-        justify-content: center;
-        text-decoration: none;
-        color: white;
-    
+.hamburger-icon {
+    display: none;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: 25px;
+    z-index: 2;
+    @include tablet {
+        display: block;
+    }
+    span {
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background-color: $text-color;
+        border-radius: 9px;
+    }
+    .line-one {
+        top: 25px;
+        transform: rotate(0deg);
+        translate: 0;
+        transition: .25s ease-in-out;
+        &.hamburger-animate {
+            transform-origin: top left;
+            transform: rotate(45deg);
+            // translate: 20px -5px;
+            translate: 17px -3px;
+            background-color: $text-hover;
+        }
+    }
+    .line-two {
+        top: 40px;
+        right: 0;
+        transition: .25s ease-in-out;
+        &.hamburger-animate {
+            right: -100px;
+            background-color: $text-hover;
+            position: absolute;
+        }
+    }
+    .line-three {
+        top: 55px;
+        transform-origin: bottom left;
+        transform: rotate(0deg);
+        translate: 0;
+        transition: .25s ease-in-out;
+        &.hamburger-animate {
+            transform-origin: bottom left;
+            transform: rotate(-45deg);
+            // translate: 20px -5px;
+            translate: 15px 0;
+            transition: .25s ease-in-out;
+            background-color: $text-hover;
+        }            
     }
 }
 

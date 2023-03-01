@@ -1,0 +1,54 @@
+@use '../variables' as *;
+@use '../responsive' as *;
+
+.about {
+    background-color: $background-primary;
+    h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .button {
+        &.resume-button {
+            padding: 15px 20px;
+        }
+    }
+}
+
+.about-container {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    @include tablet-large {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.about-image-container {
+    flex-basis: 50%;
+    margin-right: 75px;
+    display: flex;
+    justify-content: center;
+    @include tablet-large {
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 500px;
+        max-width: 500px;
+    }
+}
+
+.about-text-container {
+    flex-basis: 50%;
+    margin-left: 75px;
+    @include tablet-large {
+        margin: 0;
+        text-align: center;
+    }
+    p {
+        padding-bottom: 25px;
+    }
+}

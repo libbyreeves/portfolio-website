@@ -1,131 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elizabeth Reeves Portfolio</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<link rel="stylesheet" href="./styles/styles.css">
+	<title>Elizabeth Reeves Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14cabc6321.js" crossorigin="anonymous"></script>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text>💻</svg>">
+    </link>
 </head>
 <body>
-    <div class="wrapper">
-        <header id="header">
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#aboutMe" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+    <header class="home" id="home">
+            <!-- Desktop Nav -->
+            <nav class="desktop-menu" id="desktop-menu">
+                <div class="wrapper">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </div><!--wrapper end-->
+            </nav>
+            <!-- Mobile Nav -->
+            <nav class="mobile-menu-container" id="mobile-menu-container">
+                <div class="hamburger-icon" id="hamburger-icon">
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <span class="line-one"></span>
+                    <span class="line-two"></span>
+                    <span class="line-three"></span>
+                </div>
+                <ul class="mobile-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <nav class="navBar" id="navBar">
-               
-                    <ul>
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#aboutMe">About</a>
-                        </li>
-                        <li>
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                
-            </nav>
-        <div class="headerText" id="home">
-        <h1>Elizabeth Reeves</h1>
-        <h3>Web Developer</h3>
-        </div>
-    </header>
-
-    <main>
-        <section class="aboutMe" id="aboutMe">
-            <div class="headShot">
-                <img src= "http://placekitten.com/200/200" alt="a kitten headshot">
-            </div>
-            <div class="aboutMeText">
-            <h2>About Me</h2>
-            <p>I am a Front-End Web Developer based out of Toronto Canada. With humble beginnings as a chemical lab technician working in the science education sector, I stumbled upon the beauitful world of coding!    
-            </p>
-            <p>While on this new journey, I've discouvered a passion for: web accessibility; a hunger for learning; and a desire to create all kinds of websites and applications. Including ones that are practical, to ones that are downright silly/entertaining. I'm excited to continue my coding journey with: refining my skills; learning new ones; and being apart of a collaborative environment.</p>
-            <p>When I'm not coding, I love picking up new hobbies (most recently crocheting amigurumi), playing music and crafting.</p>
-            </div>
-
-        </section>
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <div class="iconContainer">
-                <i class="devicon-firebase-plain"></i>
-                <i class="devicon-react-original"></i>
-                <i class="devicon-html5-plain"></i>
-                <i class="devicon-css3-plain"></i>
-                <i class="devicon-sass-original"></i>
-                <i class="devicon-javascript-plain"></i>
-                <i class="devicon-github-original"></i>
-                
-
-
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-            <div class="projectContent">
-            <div class="project1">
-                <img src="./images/willow.png">
-                <div class="textContent">
-                <h3>Influencer PSD Conversion</h3>
-                <h4>HTML | SASS | CSS</h4>
-                <p>a multi-page PSD conversion created from the provided style deck</p>
-                <div class="projectButton">
-                <a href="https://roaring-cuchufli-29387d.netlify.app/" target="_blank"><button class="button">View Live</button></a>
-                <a href="https://github.com/libbyreeves/Libby-Reeves-Project01" target="_blank"><button class="button">View Repo</button></a>
-                </div>
-                </div>
-            </div>
-            <div class="project2">
-                <img src="./images/wits.png">
-                <div class="textContent">
-                <h3>Battle of Wits and Clicks</h3>
-                <h4>HTML | SASS | CSS | JavaScript | RESTful API </h4>
-                <p>A fun game utilizing APIs to generate insults or a pieces of advice to the opposing stick figure until one explodes</p>
-                <div class="projectButton">
-                    <a href="https://wits-and-clicks.netlify.app/" target="_blank"><button class="button">View Live</button></a>
-                    <a href="https://github.com/Chribbyland/project2" target="_blank"><button class="button">View Repo</button></a>
+            <!-- Header Intro -->
+            <div class="intro-container">
+                <div class="wrapper">
+                <!-- short intro text -->
+                    <div class="intro-text" id="intro-text">
+                        <h2><span class="wave">👋</span></h2>
+                        <h1>I'm <i>Elizabeth Reeves</i></h1>
+                        <h2>Front-end Developer</h2>
+                        <p>I'm a web developer based in Toronto, Canada with a passion for accessible web design 💻 and all things science 🧪</p>                        
                     </div>
+                    <!-- headshot photo -->
+                    <div class="profile-picture" id="profile-picture">
+                        <img src="./assets/face.png" alt="Me, holding a glass beaker mug with green tea">
+                    </div>
+                </div> <!--wrapper end-->
+            </div> <!-- introContainer end -->
+    </header> <!-- header end-->
+
+    <!-- skills and languages section-->
+    <section class="skills" id="skills">
+        <div class="wrapper">
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fa-brands fa-html5 fa-5x"></i>HTML</li>
+                <li><i class="fa-brands fa-css3-alt fa-5x"></i>CSS</li>
+                <li><i class="fa-brands fa-sass fa-5x"></i>Sass</li>
+                <li><i class="fa-brands fa-square-js fa-5x"></i>JavaScript</li>
+                <li><i class="fa-brands fa-react fa-5x"></i>React</li>
+                <li><i class="fa-brands fa-square-git fa-5x"></i>Git</li>
+                <li><i class="fa-solid fa-code fa-5x"></i>Code Review</li>
+                <li><i class="fa-solid fa-user-group fa-5x"></i>Paired Programming</li>
+                <li><i class="fa-solid fa-computer fa-5x"></i>Responsive Design</li>
+                <li><img src="./assets/icon-firebase.svg" class="firebase-logo" alt="Firebase Logo">Firebase</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="wrapper">
+            <h2>About</h2>
+            <div class="about-container">
+                <!-- <div class="about-image-container">
+                    <!--fun picture will go here eventually-->
+                <!-- </div> -->
+                <div class="about-text-container">
+
+                    <p>My name is Elizabeth and I'm a front-end web developer based in Toronto, Canada. I started my professional career as a lab technician in the education field, but later fell in love with the creative and expansive world of coding. </p>
+                    <p>With my previous experience working in a lab, I am no stranger to teamwork, creative problem solving, and communicating with different departments. Combining the analyical aspect of science and the creativity of web development, my goals are to create accessible and engaging web applications for all users.</p>
+                    <p>When I'm not coding, you can catch me streaming on my fiber arts 🧶 (and casual gaming) twitch channel, playing around with DIY projects 🛠️, or cooking up a new recipe 🍳</p>
+                    
                 </div>
             </div>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <h2>Contact</h2>
-            <div class="contactIconContainer">
-                <a class="devicon-linkedin-plain" href="https://www.linkedin.com/in/elizabeth-reeves-web-developer/" target="_blank"></a>
-                <a class="devicon-github-original" href="https://github.com/libbyreeves" target="_blank"></a>        
-                      
-            </div>
-            
-            <div class="emailElizabeth">
-            <button class="button">Email Elizabeth</button>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section> <!--about section end-->
 
+
+    
+
+
+    <!-- portfolio section -->
+    <section class="portfolio" id="portfolio"> 
+        <div class="wrapper">
+            <h2>Projects</h2>
+
+            <!-- portfolio item one-->
+            <div class="portfolio-item-left">
+                <div class="portfolio-item-img">
+                    <img src="./assets/whatever-floats-your-boat.png" alt="Screenshot of a voting poll application">
+                </div>
+                <div class="portfolio-item-text">
+                    <div class="title-section">
+                        <h3>Whatever Floats Your Vote 
+                            <div class="project-buttons">
+                                <a href="https://whatever-floats-your-vote.netlify.app/" target="_blank"><button class="button">View Live</button></a>
+                                <a href="https://github.com/Code-Conjurers/Voting-Booth" target="_blank"><button class="button">View Repo</button></a>
+                            </div>
+                            
+                        </h3>
+                    </div>
+                    <p>An application that allows the user to create, participate and share polls from the site.</p>
+                    <ul class="made-with-icons">
+                        <li><i class="fa-brands fa-react fa-2x"></i>React</li>
+                        <li><i class="fa-brands fa-sass fa-2x"></i>Sass</li>
+                        <li><img src="./assets/icon-firebase.svg" class="firebase-logo" alt="Firebase Logo">Firebase</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- portfolio item two-->
+            <div class="portfolio-item-right">
+                <div class="portfolio-item-text">
+                    <h3>Battle of Wits and Clicks
+                        <div class="projectButton">
+                            <a href="https://wits-and-clicks.netlify.app/" target="_blank"><button class="button">View Live</button></a>
+                            <a href="https://github.com/Chribbyland/project2" target="_blank"><button class="button">View Repo</button></a>
+                        </div>
+                        
+                    </h3>
+                    <p>A fun game utilizing APIs to generate insults or a pieces of advice to the opposing stick figure until one explodes.</p>
+                    <ul class="made-with-icons">
+                        <li><i class="fa-brands fa-square-js fa-2x"></i>JavaScript</li>
+                        <li><i class="fa-brands fa-sass fa-2x"></i>Sass</li>
+                        <li><i class="fa-solid fa-cloud fa-2x"></i>REST API</li>
+                    </ul>
+                </div>
+                <div class="portfolio-item-img">
+                    <img src="./assets/wits.png" alt="Screenshot of the application Battle of Wits and Clicks">
+                </div>
+            </div>
+
+            <!-- portfolio item three-->
+            <div class="portfolio-item-left">
+                <div class="portfolio-item-img">
+                    <img src="./assets/crochet notebook.png" alt="Screenshot of the application Crochet Notebook">
+                </div>
+                <div class="portfolio-item-text">
+                    <div class="title-section">
+                        <h3>Crochet Notebook
+                            <div class="projectButton">
+                                <a href="https://roaring-cuchufli-29387d.netlify.app/" target="_blank"><button class="button">View Live</button></a>
+                                <a href="https://github.com/libbyreeves/Libby-Reeves-Project01" target="_blank"><button class="button">View Repo</button></a>
+                            </div>
+                            
+                        </h3>
+                    </div>
+                    <p>an application that allows you to save crochet/knitting pattern ideas, and notes using firebase and react.</p>
+                    <ul class="made-with-icons">
+                        <li><i class="fa-brands fa-react fa-2x"></i>React</li>
+                        <li><i class="fa-brands fa-sass fa-2x"></i>Sass</li>
+                        <li><img src="./assets/icon-firebase.svg" class="firebase-logo" alt="Firebase Logo">Firebase</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            
+
+        </div> <!--wrapper end-->
+    </section> <!--portfolio section end-->
+
+
+     
+
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+            <div class="wrapper">
+                <h2>Let's Connect</h2>
+                <p>If you would like to schedule a time to chat you can do so <a href="">here</a> or you can connect with me through my socials listed below. Can't wait to chat with you!</p>
+            
+
+            <div class="connect-container">
+                
+                    <ul class="social-media">
+                        <li><a target="_blank" href="https://github.com/caryltan?tab=repositories"><i class="fa-brands fa-github fa-3x" alt="Github Repo"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/caryl-tan/"><i class="fa-brands fa-linkedin fa-3x" alt="Linkedin"></i></a></li>
+                        <li><a href="mailto:libby.reeves@hotmail.com"><i class="fa-solid fa-envelope fa-3x" alt="Email"></i></a></li>
+                    </ul>
+                </div> <!--connect-container-->
+            </div> <!--wrapper end-->
+
+            
+    </section> <!--contact section end-->
+
+
+    <!--footer section-->
     <footer>
-        <p>Built in 2023 by Elizabeth Reeves</p>
+        <p>Copyright © 2023 Elizabeth Reeves</p>
     </footer>
-    </div>
-    <script src="./javascript/script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

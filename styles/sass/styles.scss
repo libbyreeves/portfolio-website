@@ -1,15 +1,16 @@
-@use 'partials/setup';
-@use 'partials/variables';
-@use 'partials/siteStyles';
-@use 'partials/typography';
-@use 'partials/button';
-@use 'partials/nav';
-@use 'partials/header';
-@use 'partials/aboutMe';
-@use 'partials/skills';
-@use 'partials/projects';
-@use 'partials/contact';
-@use 'partials/footer';
-@use 'partials/icons';
-@use 'partials/hamburger';
-@use 'partials/media-queries';
+@use './setup';
+@use './commons';
+@use './mixins';
+@use './variables';
+@use './responsive';
+
+// partials
+@use './partials/nav';
+@use './partials/header';
+@use './partials/skills';
+@use './partials/portfolio';
+@use './partials/about';
+@use './partials/contact';
+@use './partials/footer';
+@use './partials/wave-hand';
+
