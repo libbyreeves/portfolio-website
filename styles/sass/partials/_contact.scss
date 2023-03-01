@@ -9,6 +9,23 @@
     }
     .contact-paragraph {
         margin-bottom: 80px;
+        a {
+                color: $text-color;
+                text-decoration: none;
+        
+                &:visited {
+                    color: $text-color;
+                }
+        
+                &:hover,
+                &:focus {
+                    color: $text-hover;
+                    
+                    
+                    padding: 0 10px;
+                    transition: background-color 1s ease-out;
+                }
+            }
     }
     }
     h2 {
@@ -64,28 +81,3 @@
     }
 }
 
-.icebreaker-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: calc(75px/2);
-    padding-bottom: 75px;
-    background-color: $background-secondary;
-    @include mobile {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 0;
-    }
-    h3 {
-        margin-top: 10px;
-        padding-bottom: 32px;
-        @include mobile {
-            padding-bottom: 0;
-        }
-    }
-    li {
-        @include mobile {
-            flex-basis: 50%;
-        }
-    }
-}

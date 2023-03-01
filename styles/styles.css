@@ -1039,6 +1039,19 @@ header .wrapper {
 .contact .contact-paragraph {
   margin-bottom: 80px;
 }
+.contact .contact-paragraph a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact .contact-paragraph a:visited {
+  color: #fff;
+}
+.contact .contact-paragraph a:hover, .contact .contact-paragraph a:focus {
+  color: #24505a;
+  padding: 0 10px;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
 
 h2 {
   margin: 0 auto;
@@ -1130,47 +1143,6 @@ li {
   .connect-container ul li {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
-  }
-}
-
-.icebreaker-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 37.5px;
-  padding-bottom: 75px;
-  background-color: #24505a;
-}
-@media (max-width: 576px) {
-  .icebreaker-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 50px 0;
-  }
-}
-.icebreaker-container h3 {
-  margin-top: 10px;
-  padding-bottom: 32px;
-}
-@media (max-width: 576px) {
-  .icebreaker-container h3 {
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 576px) {
-  .icebreaker-container li {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
   }
 }
 
