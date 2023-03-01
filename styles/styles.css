@@ -657,6 +657,7 @@ header .wrapper {
       flex-basis: 50%;
 }
 .profile-picture img {
+  width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
