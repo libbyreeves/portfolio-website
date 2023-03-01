@@ -43,6 +43,14 @@
             margin: 0 auto;
             flex-wrap: wrap;
         }
+        i {
+            &:hover,
+                &:focus {
+                    color: $text-hover;
+                    background-color: $text-color;
+                    padding: 5px;
+                }
+        }
     }
     li {
         display: flex;

@@ -1083,6 +1083,11 @@ ul {
         flex-wrap: wrap;
   }
 }
+ul i:hover, ul i:focus {
+  color: #24505a;
+  background-color: #fff;
+  padding: 5px;
+}
 
 li {
   display: -webkit-box;
