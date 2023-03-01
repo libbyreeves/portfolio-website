@@ -1057,7 +1057,7 @@ h2 {
   margin: 0 auto;
 }
 
-ul {
+ul.social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1067,7 +1067,7 @@ ul {
   margin: 0 50px;
 }
 @media (max-width: 576px) {
-  ul {
+  ul.social-media {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1083,7 +1083,7 @@ ul {
         flex-wrap: wrap;
   }
 }
-ul i:hover, ul i:focus {
+ul.social-media i:hover, ul.social-media i:focus {
   color: #24505a;
   background-color: #fff;
   padding: 5px;
