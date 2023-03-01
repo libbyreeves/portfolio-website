@@ -653,9 +653,6 @@ header .wrapper {
 .profile-picture img {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 @media (max-width: 993px) {
   .profile-picture img {
