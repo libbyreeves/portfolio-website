@@ -29,6 +29,15 @@
     i {
         padding-bottom: 10px;
     }
+
+    button {
+        color: $text-color;
+        &:hover,
+            &:focus {
+                color: $text-hover;
+                background-color: $text-color;
+            }
+    }
 }
 
 .portfolio-item-left {

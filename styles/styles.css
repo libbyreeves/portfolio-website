@@ -235,69 +235,63 @@ body {
   color: #fff;
   overflow-x: hidden;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   font-family: "Poppins", sans-serif;
   color: #fff;
   font-weight: 600;
 }
-
-h1 {
+body h1 {
   font-size: 55px;
   font-weight: 900;
   line-height: 55px;
 }
 @media (max-width: 992px) {
-  h1 {
+  body h1 {
     font-size: 2.5em;
   }
 }
 @media (max-width: 576px) {
-  h1 {
+  body h1 {
     font-size: 3em;
   }
 }
-
-h2 {
+body h2 {
   font-size: 50px;
   font-weight: 900;
   padding: 75px 0;
   line-height: 50px;
 }
 @media (max-width: 992px) {
-  h2 {
+  body h2 {
     font-size: 2em;
   }
 }
 @media (max-width: 576px) {
-  h2 {
+  body h2 {
     line-height: 75px;
     padding: 25px 0;
   }
 }
-
-h3 {
+body h3 {
   font-size: 32px;
   font-weight: 600;
 }
 @media (max-width: 576px) {
-  h3 {
+  body h3 {
     line-height: 50px;
   }
 }
-
 @media (max-width: 576px) {
-  h4 {
+  body h4 {
     font-size: 25px;
   }
 }
-
-p {
+body p {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -306,44 +300,39 @@ p {
   letter-spacing: 0;
 }
 @media (max-width: 576px) {
-  p {
+  body p {
     font-size: 1.1em;
   }
 }
-
-a {
+body a {
   color: #fff;
   text-decoration: none;
 }
-a:visited {
+body a:visited {
   color: #fff;
 }
-
-ul {
+body ul {
   padding-left: 0;
 }
-ul li {
+body ul li {
   list-style: none;
 }
-
-header {
+body header {
   background-color: #c57385;
   width: 100%;
   height: auto;
 }
 @media (max-width: 992px) {
-  header {
+  body header {
     height: auto;
   }
 }
-
-.wrapper {
+body .wrapper {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
-
-button {
+body button {
   border: 2px solid #fff;
   border-radius: 25px;
   background-color: transparent;
@@ -354,20 +343,20 @@ button {
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
 }
-button.portfolio-button {
+body button.portfolio-button {
   text-transform: uppercase;
   width: 40%;
   margin-top: 50px;
 }
-button.portfolio-button:hover {
+body button.portfolio-button:hover {
   background-color: #fff;
 }
-button.portfolio-button:hover a {
+body button.portfolio-button:hover a {
   color: #333333;
 }
 
 nav {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -377,9 +366,12 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 nav ul a {
   color: #fff;
@@ -390,6 +382,7 @@ nav ul a:visited {
 }
 nav ul a:hover, nav ul a:focus {
   color: #24505a;
+  background-color: #fff;
 }
 nav ul li {
   padding: 0 20px;
@@ -503,7 +496,7 @@ nav ul li {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   translate: 17px -3px;
-  background-color: #24505a;
+  background-color: #fff;
 }
 .hamburger-icon .line-two {
   top: 40px;
@@ -513,7 +506,7 @@ nav ul li {
 }
 .hamburger-icon .line-two.hamburger-animate {
   right: -100px;
-  background-color: #24505a;
+  background-color: #fff;
   position: absolute;
 }
 .hamburger-icon .line-three {
@@ -534,7 +527,7 @@ nav ul li {
   translate: 15px 0;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
-  background-color: #24505a;
+  background-color: #c57385;
 }
 
 header {
@@ -649,8 +642,6 @@ header .wrapper {
 }
 
 .profile-picture {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,13 +649,6 @@ header .wrapper {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-.profile-picture img {
-  width: auto;
-  height: auto;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 @media (max-width: 992px) {
   .profile-picture img {
@@ -687,6 +671,7 @@ header .wrapper {
 .skills {
   background-color: #24505a;
   margin: auto 0;
+  padding-bottom: 70px;
 }
 .skills h2 {
   margin: auto 0;
@@ -773,6 +758,13 @@ header .wrapper {
 }
 .portfolio i {
   padding-bottom: 10px;
+}
+.portfolio button {
+  color: #fff;
+}
+.portfolio button:hover, .portfolio button:focus {
+  color: #24505a;
+  background-color: #fff;
 }
 
 .portfolio-item-left {
@@ -951,6 +943,7 @@ header .wrapper {
 
 .about {
   background-color: #c57385;
+  padding-bottom: 70px;
 }
 .about h2 {
   text-align: center;
@@ -1009,9 +1002,8 @@ header .wrapper {
 }
 
 .about-text-container {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  margin-left: 75px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
 }
 @media (max-width: 992px) {
   .about-text-container {
@@ -1027,20 +1019,28 @@ header .wrapper {
   background-color: #c57385;
   text-align: center;
 }
-.contact h2 {
+.contact p {
+  margin-bottom: 30px;
+}
+.contact .contact-paragraph {
+  margin-bottom: 80px;
+}
+
+h2 {
   margin: 0 auto;
 }
-.contact ul {
+
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 50px;
 }
 @media (max-width: 576px) {
-  .contact ul {
+  ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1056,7 +1056,8 @@ header .wrapper {
         flex-wrap: wrap;
   }
 }
-.contact li {
+
+li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,9 +1066,10 @@ header .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin: 0 10px;
 }
 @media (max-width: 576px) {
-  .contact li {
+  li {
     padding: 20px;
   }
 }

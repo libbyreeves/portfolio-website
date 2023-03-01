@@ -3,6 +3,7 @@
 
 .about {
     background-color: $background-primary;
+    padding-bottom: 70px;
     h2 {
         text-align: center;
         margin: 0 auto;
@@ -42,8 +43,8 @@
 }
 
 .about-text-container {
-    flex-basis: 50%;
-    margin-left: 75px;
+   flex-basis: 80%;
+    
     @include tablet-large {
         margin: 0;
         text-align: center;

@@ -10,14 +10,7 @@ body {
     letter-spacing: 0.5px;
     color: $text-color;
     overflow-x: hidden;
-    // transition: 0.25s ease-in-out;
-    // &.open {
-    //     opacity: 0.85;
-    //     transition: 0.25s ease-in-out;
-    //     position: relative;
-    //     z-index: 1;
-    // }
-}
+ 
 
 //text and fonts
 h1,
@@ -140,4 +133,5 @@ button {
             }
         }
     }
+}
 }

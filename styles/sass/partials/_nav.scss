@@ -4,14 +4,16 @@
 
 //nav
 nav {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: capitalize; 
+    
     ul {
         margin: 0 auto;
         padding-top: 30px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-evenly;
         a {
             color: $text-color;
             text-decoration: none;
@@ -20,6 +22,7 @@ nav {
             }
             &:hover, &:focus {
                 color: $text-hover;
+                background-color: $text-color;
             }
         }
         li {
@@ -110,7 +113,7 @@ nav {
             transform: rotate(45deg);
             // translate: 20px -5px;
             translate: 17px -3px;
-            background-color: $text-hover;
+            background-color: $text-color;
         }
     }
     .line-two {
@@ -119,7 +122,7 @@ nav {
         transition: .25s ease-in-out;
         &.hamburger-animate {
             right: -100px;
-            background-color: $text-hover;
+            background-color: $text-color;
             position: absolute;
         }
     }
@@ -135,7 +138,7 @@ nav {
             // translate: 20px -5px;
             translate: 15px 0;
             transition: .25s ease-in-out;
-            background-color: $text-hover;
+            background-color: $background-primary;
         }            
     }
 }

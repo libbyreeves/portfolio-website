@@ -80,14 +80,13 @@ header {
 }
 
 .profile-picture {
-    flex-basis: 50%;
+    
     background-color: transparent;
     display: flex;
     justify-content: flex-end;
     img {
-        width: auto;
-        height: auto;
-        flex-grow: 1;
+        
+        
         @include tablet-large {
             padding-top: 50px;
             left: 30%;
