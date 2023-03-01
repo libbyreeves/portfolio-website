@@ -85,7 +85,8 @@ header {
     display: flex;
     justify-content: flex-end;
     img {
-        
+        align-self: flex-end;
+        height:fit-content;
         
         @include tablet-large {
             padding-top: 50px;

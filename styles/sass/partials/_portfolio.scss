@@ -2,6 +2,9 @@
 @use '../responsive' as *;
 
 .portfolio {
+    .project-buttons {
+        margin-top: 20px;
+    }
     background-color: $background-secondary;
     margin: 0 auto;
     @include tablet-large {

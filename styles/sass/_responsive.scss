@@ -1,11 +1,17 @@
 $breakpoint-large-device: 1200px;
-$breakpoint-tablet-large: 992px;
+$breakpoint-tablet-large: 993px;
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 576px;
 
 @mixin large-device () {
     @media (max-width: $breakpoint-large-device) { 
         @content; 
+        .profile-picture {
+            img {
+
+                height: 80%;
+            }
+        }
     }
 }
 
