@@ -114,7 +114,6 @@ nav {
         &.hamburger-animate {
             transform-origin: top left;
             transform: rotate(45deg);
-            // translate: 20px -5px;
             translate: 17px -3px;
             background-color: $text-color;
         }
@@ -141,7 +140,7 @@ nav {
             // translate: 20px -5px;
             translate: 15px 0;
             transition: .25s ease-in-out;
-            background-color: $background-primary;
+            background-color: $text-color;
         }            
     }
 }
