@@ -23,6 +23,9 @@ nav {
             &:hover, &:focus {
                 color: $text-hover;
                 background-color: $text-color;
+                border-radius: 25px;
+                padding: 0 10px;
+                transition: background-color 1s ease-out;
             }
         }
         li {

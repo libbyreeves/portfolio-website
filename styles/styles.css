@@ -383,6 +383,10 @@ nav ul a:visited {
 nav ul a:hover, nav ul a:focus {
   color: #24505a;
   background-color: #fff;
+  border-radius: 25px;
+  padding: 0 10px;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
 }
 nav ul li {
   padding: 0 20px;
@@ -649,6 +653,8 @@ header .wrapper {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 .profile-picture img {
   -ms-flex-item-align: end;
