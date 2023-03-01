@@ -561,7 +561,7 @@ i {
 }
 
 .nav {
-  position: fixed;
+  position: relative;
   background: pink;
   color: white;
   top: 0;
