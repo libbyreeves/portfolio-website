@@ -264,6 +264,9 @@ body h1 {
   body h1 {
     font-size: 3em;
   }
+  body h1 ul.social-media li {
+    margin: 0;
+  }
 }
 body h2 {
   font-size: 50px;
@@ -281,6 +284,9 @@ body h2 {
     line-height: 75px;
     padding: 25px 0;
   }
+  body h2 ul.social-media li {
+    margin: 0;
+  }
 }
 body h3 {
   font-size: 32px;
@@ -290,10 +296,16 @@ body h3 {
   body h3 {
     line-height: 50px;
   }
+  body h3 ul.social-media li {
+    margin: 0;
+  }
 }
 @media (max-width: 576px) {
   body h4 {
     font-size: 25px;
+  }
+  body h4 ul.social-media li {
+    margin: 0;
   }
 }
 body p {
@@ -307,6 +319,9 @@ body p {
 @media (max-width: 576px) {
   body p {
     font-size: 1.1em;
+  }
+  body p ul.social-media li {
+    margin: 0;
   }
 }
 body a {
@@ -555,6 +570,9 @@ header p {
     margin: 0;
     line-height: 70px;
   }
+  header h1 ul.social-media li {
+    margin: 0;
+  }
 }
 header h2 {
   padding: 25px 0;
@@ -570,6 +588,9 @@ header h2 {
     font-size: 25px;
     line-height: 20px;
   }
+  header h2 ul.social-media li {
+    margin: 0;
+  }
 }
 @media (max-width: 993px) {
   header p {
@@ -579,6 +600,9 @@ header h2 {
 @media (max-width: 576px) {
   header p {
     display: none;
+  }
+  header p ul.social-media li {
+    margin: 0;
   }
 }
 @media (max-width: 993px) {
@@ -595,6 +619,9 @@ header h2 {
 @media (max-width: 576px) {
   header .portfolio-button {
     display: none;
+  }
+  header .portfolio-button ul.social-media li {
+    margin: 0;
   }
 }
 header .wrapper {
@@ -640,6 +667,9 @@ header .wrapper {
     position: relative;
     margin: 0 auto;
   }
+  .intro-container .wrapper ul.social-media li {
+    margin: 0;
+  }
 }
 
 .intro-text {
@@ -682,6 +712,9 @@ header .wrapper {
     padding-top: 20px;
     left: 0;
   }
+  .profile-picture img ul.social-media li {
+    margin: 0;
+  }
 }
 
 .skills {
@@ -696,6 +729,9 @@ header .wrapper {
 @media (max-width: 576px) {
   .skills h2 {
     padding-bottom: 0;
+  }
+  .skills h2 ul.social-media li {
+    margin: 0;
   }
 }
 .skills ul {
@@ -730,6 +766,9 @@ header .wrapper {
   .skills ul li i {
     font-size: 3rem;
   }
+  .skills ul li i ul.social-media li {
+    margin: 0;
+  }
 }
 
 .firebase-logo {
@@ -739,6 +778,9 @@ header .wrapper {
 @media (max-width: 576px) {
   .firebase-logo {
     height: 68px;
+  }
+  .firebase-logo ul.social-media li {
+    margin: 0;
   }
 }
 
@@ -771,6 +813,9 @@ header .wrapper {
   .portfolio h3 .span-spacer {
     padding: 0 10px;
   }
+  .portfolio h3 .span-spacer ul.social-media li {
+    margin: 0;
+  }
 }
 .portfolio h4 {
   text-align: center;
@@ -795,6 +840,9 @@ header .wrapper {
 @media (max-width: 576px) {
   .portfolio-item-left {
     padding-bottom: 50px;
+  }
+  .portfolio-item-left ul.social-media li {
+    margin: 0;
   }
 }
 @media (max-width: 993px) {
@@ -910,10 +958,16 @@ header .wrapper {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
   }
+  .made-with-icons li ul.social-media li {
+    margin: 0;
+  }
 }
 @media (max-width: 576px) {
   .made-with-icons i {
     font-size: 3rem;
+  }
+  .made-with-icons i ul.social-media li {
+    margin: 0;
   }
 }
 .made-with-icons .firebase-logo {
@@ -923,6 +977,9 @@ header .wrapper {
 @media (max-width: 576px) {
   .made-with-icons .firebase-logo {
     height: 58px;
+  }
+  .made-with-icons .firebase-logo ul.social-media li {
+    margin: 0;
   }
 }
 
@@ -1042,7 +1099,7 @@ header .wrapper {
   margin-bottom: 30px;
 }
 .contact .contact-paragraph {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 .contact .contact-paragraph a {
   color: #fff;
@@ -1087,6 +1144,9 @@ ul.social-media {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  ul.social-media ul.social-media li {
+    margin: 0;
+  }
 }
 ul.social-media i:hover, ul.social-media i:focus {
   color: #24505a;
@@ -1108,6 +1168,9 @@ li {
 @media (max-width: 576px) {
   li {
     padding: 20px;
+  }
+  li ul.social-media li {
+    margin: 0;
   }
 }
 
@@ -1153,6 +1216,9 @@ li {
   .connect-container ul li {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
+  }
+  .connect-container ul li ul.social-media li {
+    margin: 0;
   }
 }
 
@@ -1247,4 +1313,40 @@ footer {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+}
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.form button {
+  color: #fff;
+}
+.form button:hover, .form button:focus {
+  color: #24505a;
+  background-color: #fff;
+}
+.form input,
+.form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.form input,
+.form textarea {
+  margin-top: 0.5rem;
+}
+.form input {
+  padding: 0.2rem 0.5rem;
 }

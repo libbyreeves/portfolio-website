@@ -1,0 +1,35 @@
+@use '../variables' as *;
+@use '../responsive' as *;
+@use '../mixins' as *;
+
+.form {
+    display: flex;
+        flex-direction: column;
+    margin-top: 20px;
+    button {
+            color: $text-color;
+    
+            &:hover,
+            &:focus {
+                color: $text-hover;
+                background-color: $text-color;
+            }
+        }
+    
+        input,
+        label {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+    
+        input,
+        textarea {
+            margin-top: 0.5rem;
+        }
+    
+        input {
+            padding: 0.2rem 0.5rem;
+        }
+    }
