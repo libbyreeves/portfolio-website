@@ -135,16 +135,18 @@ button {
     text-align: center;
     padding: 10px;
     transition: background-color 1s ease-out;
-    &.portfolio-button {
-        text-transform: uppercase;
-        width: 40%;
-        margin-top: 50px;
-        &:hover {
-            background-color: $text-color;
-            a {
-                color: $text-color-dark;
-            }
-        }
+    
+}
+}
+u {
+    a {
+
+&:hover {
+    background-color: $text-color;
+        color: $text-color-dark;
+        padding: 0 10px;
+            transition: background-color 1s ease-out;
+            border-radius: 25px;
     }
 }
 }

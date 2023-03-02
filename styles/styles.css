@@ -383,16 +383,14 @@ body button {
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
 }
-body button.portfolio-button {
-  text-transform: uppercase;
-  width: 40%;
-  margin-top: 50px;
-}
-body button.portfolio-button:hover {
+
+u a:hover {
   background-color: #fff;
-}
-body button.portfolio-button:hover a {
   color: #333333;
+  padding: 0 10px;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  border-radius: 25px;
 }
 
 nav {
