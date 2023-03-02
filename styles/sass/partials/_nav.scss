@@ -7,6 +7,9 @@ nav {
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize; 
+    margin-bottom: 26px;
+   
+    
     
     ul {
         margin: 0 auto;
@@ -14,6 +17,9 @@ nav {
         display: flex;
         justify-content: center;
         justify-content: space-evenly;
+    }
+    li {
+        padding: 0 20px;
         a {
             color: $text-color;
             text-decoration: none;
@@ -28,13 +34,11 @@ nav {
                 transition: background-color 1s ease-out;
             }
         }
-        li {
-            padding: 0 20px;
-        }
     }
 }
 
 .desktop-menu {
+    
     @include tablet {
         display: none;
     }

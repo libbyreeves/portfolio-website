@@ -6,6 +6,8 @@
     text-align: center;
     p {
         margin-bottom: 30px;
+        margin-right: 10%;
+        margin-left: 10%;
     }
     .contact-paragraph {
         margin-bottom: 60px;
@@ -50,6 +52,9 @@
                     color: $text-hover;
                     background-color: $text-color;
                     padding: 5px;
+                    
+                        transition: background-color 1s ease-out;
+                        border-radius: 25px;
                 }
         }
     }
