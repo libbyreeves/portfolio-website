@@ -426,7 +426,8 @@ nav li a:hover, nav li a:focus {
   color: #24505a;
   background-color: #fff;
   border-radius: 25px;
-  padding: 10px 10px;
+  padding: 10px 15px;
+  margin: 5px;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
 }

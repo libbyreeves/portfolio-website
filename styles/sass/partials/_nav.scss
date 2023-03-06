@@ -30,7 +30,8 @@ nav {
                 color: $text-hover;
                 background-color: $text-color;
                 border-radius: 25px;
-                padding: 10px 10px;
+                padding: 10px 15px;
+                margin: 5px;
                 transition: background-color 1s ease-out;
             }
         }
@@ -81,6 +82,7 @@ nav {
         opacity: 0%;
         transition: 0.25s ease-in-out;
         z-index: 1;
+        
         @include tablet {
         &.open {
             visibility: visible;
