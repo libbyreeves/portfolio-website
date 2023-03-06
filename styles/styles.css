@@ -1243,7 +1243,7 @@ ul.social-media {
 ul.social-media i:hover, ul.social-media i:focus {
   color: #24505a;
   background-color: #fff;
-  padding: 5px;
+  padding: 10px;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
   border-radius: 25px;
