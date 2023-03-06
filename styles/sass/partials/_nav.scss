@@ -19,11 +19,12 @@ nav {
         justify-content: space-evenly;
     }
     li {
-        padding: 0 20px;
+        // padding: 0 20px;
         a {
             color: $text-color;
             text-decoration: none;
-            padding: 10px 15px;
+            padding: 10px;
+            
             &:visited {
                 color: $text-color;
             }
@@ -31,7 +32,6 @@ nav {
                 color: $text-hover;
                 background-color: $text-color;
                 border-radius: 25px;
-                margin: 5px;
                 transition: background-color 1s ease-out;
             }
         }
