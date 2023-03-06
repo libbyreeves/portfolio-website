@@ -828,6 +828,9 @@ header .wrapper {
   background-color: #24505a;
   margin: 0 auto;
 }
+.portfolio .title-section-1 h3 {
+  font-size: 30px;
+}
 .portfolio .project-buttons {
   margin-top: 30px;
 }

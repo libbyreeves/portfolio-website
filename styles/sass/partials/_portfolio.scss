@@ -2,6 +2,11 @@
 @use '../responsive' as *;
 
 .portfolio {
+    .title-section-1 {
+        h3 {
+            font-size: 30px;
+        }
+    }
     .project-buttons {
         margin-top: 30px;
     }
