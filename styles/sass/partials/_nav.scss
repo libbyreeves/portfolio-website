@@ -23,6 +23,7 @@ nav {
         a {
             color: $text-color;
             text-decoration: none;
+            padding: 10px 15px;
             &:visited {
                 color: $text-color;
             }
@@ -30,7 +31,6 @@ nav {
                 color: $text-hover;
                 background-color: $text-color;
                 border-radius: 25px;
-                padding: 10px 15px;
                 margin: 5px;
                 transition: background-color 1s ease-out;
             }
@@ -101,6 +101,7 @@ nav {
     width: 50px;
     top: 25px;
     z-index: 2;
+    cursor: pointer;
     @include tablet {
         display: block;
     }

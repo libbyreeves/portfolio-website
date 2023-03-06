@@ -391,6 +391,7 @@ u a:hover {
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 nav {
@@ -418,6 +419,7 @@ nav li {
 nav li a {
   color: #fff;
   text-decoration: none;
+  padding: 10px 15px;
 }
 nav li a:visited {
   color: #fff;
@@ -426,7 +428,6 @@ nav li a:hover, nav li a:focus {
   color: #24505a;
   background-color: #fff;
   border-radius: 25px;
-  padding: 10px 15px;
   margin: 5px;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
@@ -512,6 +513,7 @@ nav li a:hover, nav li a:focus {
   width: 50px;
   top: 25px;
   z-index: 2;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .hamburger-icon {
@@ -866,8 +868,22 @@ header .wrapper {
 .portfolio h4 {
   text-align: center;
 }
+.portfolio li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .portfolio i {
   padding-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.portfolio img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .portfolio button {
   color: #fff;
@@ -875,6 +891,7 @@ header .wrapper {
 .portfolio button:hover, .portfolio button:focus {
   color: #24505a;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .portfolio-item-left {
@@ -1043,6 +1060,9 @@ header .wrapper {
   .made-with-icons i ul.social-media li {
     margin: 0;
   }
+}
+.made-with-icons img {
+  margin-bottom: 1px;
 }
 .made-with-icons .firebase-logo {
   height: 40px;
@@ -1240,10 +1260,12 @@ ul.social-media {
     margin: 0;
   }
 }
+ul.social-media i {
+  padding: 10px;
+}
 ul.social-media i:hover, ul.social-media i:focus {
   color: #24505a;
   background-color: #fff;
-  padding: 10px;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
   border-radius: 25px;
@@ -1436,6 +1458,7 @@ footer {
 .form button:hover, .form button:focus {
   color: #24505a;
   background-color: #fff;
+  cursor: pointer;
 }
 .form input,
 .form label {

@@ -47,11 +47,12 @@
         }
 
         i {
+            padding: 10px;
             &:hover,
                 &:focus {
                     color: $text-hover;
                     background-color: $text-color;
-                    padding: 10px;
+                    
                     
                         transition: background-color 1s ease-out;
                         border-radius: 25px;

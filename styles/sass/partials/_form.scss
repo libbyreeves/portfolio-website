@@ -16,6 +16,7 @@
             &:focus {
                 color: $text-hover;
                 background-color: $text-color;
+                cursor: pointer;
             }
         }
     

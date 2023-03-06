@@ -29,8 +29,17 @@
     h4 {
         text-align: center;
     }
+    li {
+        align-items: center;
+    }
     i {
         padding-bottom: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        align-items: center;
     }
 
     button {
@@ -39,6 +48,7 @@
             &:focus {
                 color: $text-hover;
                 background-color: $text-color;
+                cursor: pointer;
             }
     }
 }
@@ -119,6 +129,10 @@
         @include mobile {
             font-size: 3rem;
         }
+    }
+
+    img {
+        margin-bottom: 1px;
     }
     .firebase-logo {
         height: 40px;
