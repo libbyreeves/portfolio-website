@@ -482,41 +482,41 @@ function initCursor() {
 	/*
 		Validate Contact Form
 	*/
-	if($('.contacts-form').length) {
-	$('#cform').validate({
-		rules: {
-			name: {
-				required: true
-			},
-			message: {
-				required: true
-			},
-			email: {
-				required: true,
-				email: true
-			}
-		},
-		success: 'valid',
-		submitHandler: function() {
-			$.ajax({
-				url: 'mailer/feedback.php',
-				type: 'post',
-				dataType: 'json',
-				data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&subject='+ $("#cform").find('input[name="subject"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
-				beforeSend: function() {
+	// if($('.contacts-form').length) {
+	// $('#cform').validate({
+	// 	rules: {
+	// 		name: {
+	// 			required: true
+	// 		},
+	// 		message: {
+	// 			required: true
+	// 		},
+	// 		email: {
+	// 			required: true,
+	// 			email: true
+	// 		}
+	// 	},
+	// 	success: 'valid',
+	// 	submitHandler: function() {
+	// 		$.ajax({
+	// 			url: 'mailer/feedback.php',
+	// 			type: 'post',
+	// 			dataType: 'json',
+	// 			data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&subject='+ $("#cform").find('input[name="subject"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
+	// 			beforeSend: function() {
 
-				},
-				complete: function() {
+	// 			},
+	// 			complete: function() {
 
-				},
-				success: function(data) {
-					$('#cform').fadeOut();
-					$('.alert-success').delay(1000).fadeIn();
-				}
-			});
-		}
-	});
-	}
+	// 			},
+	// 			success: function(data) {
+	// 				$('#cform').fadeOut();
+	// 				$('.alert-success').delay(1000).fadeIn();
+	// 			}
+	// 		});
+	// 	}
+	// });
+	// }
 }
 
 function setHeightFullSection() {
