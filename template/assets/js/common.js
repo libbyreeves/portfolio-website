@@ -519,6 +519,14 @@ function initCursor() {
 	// }
 }
 
+function handleFormSuccess() {
+  // Hide the form
+  document.getElementById("cform").style.display = "none";
+
+  // Show the custom success message
+  document.getElementById("success-message").style.display = "block";
+}
+
 function setHeightFullSection() {
 	var width = $(window).width();
 	var height = $(window).height();
