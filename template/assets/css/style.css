@@ -5723,3 +5723,7 @@ a.wp-block-button__link {
 	justify-content: center;
 }
 
+.bot-field {
+	display: none;
+}
+
