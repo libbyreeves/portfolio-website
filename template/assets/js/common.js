@@ -519,13 +519,21 @@ function initCursor() {
 	// }
 }
 
-function handleFormSuccess() {
-  // Hide the form
-  document.getElementById("cform").style.display = "none";
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("cform");
+  var successMessage = document.getElementById("success-message");
 
-  // Show the custom success message
-  document.getElementById("success-message").style.display = "block";
-}
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Here, you can add your custom logic to send the form data to your server or email if needed
+    // Netlify form handling will still take place in the background
+
+    // After the form data is successfully submitted to Netlify, you can display the custom success message
+    successMessage.style.display = "block";
+    form.style.display = "none"; // Hide the form
+  });
+});
 
 function setHeightFullSection() {
 	var width = $(window).width();
